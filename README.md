@@ -6,6 +6,10 @@ architecture in [Turing Complete](https://store.steampowered.com/app/1444480/Tur
 I did not find the experience of writing overture assembly pleasant so i decided to spend a couple hours of my life
 writing the definition file.
 
+## Assembling
+Since customasm doesn't support the format required by the alpha branch of TC i have made a simple script to convert it to such format.
+`.\build.ps1 .\src\add5.asm` will assemble the file and put the result in the dist directory, which you can then copy into the TC assembler.
+
 ## Quick explanation of the definitions
 
 If you look in [./src/lib/overture.asm](./src/lib/overture.asm) you'll see that it's way more complex than it should be for such a simple cpu,
